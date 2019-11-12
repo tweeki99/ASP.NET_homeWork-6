@@ -1,0 +1,147 @@
+﻿table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: inherit;
+    border: 3px solid black;
+    text-align: center;
+}
+
+thead th:nth-child(1) {
+    width: 20%;
+}
+
+thead th:nth-child(2) {
+    width: 50%;
+}
+
+thead th:nth-child(3) {
+    width: 10%;
+}
+
+thead th:nth-child(4) {
+    width: 20%;
+}
+
+th, td {
+    padding: 20px;
+}
+
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+thead th {
+    font-family: 'Rock Salt', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+td a{
+    color: white;
+}
+
+tbody td {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: dimgray;
+}
+
+tbody tr:nth-child(even) {
+    background-color: gray;
+}
+
+caption {
+    text-align: center;
+}
+
+.btnLink {
+    background-color: gray;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    opacity: 0.8;
+
+
+    margin: 10px;
+    position: absolute;
+}
+
+.btnLink:hover {
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+}
+
+h2 {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.textBox {
+    margin: 0px auto 10px auto;
+    font-size: 30px;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#form {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: gray;
+    border-radius: 30px;
+}
+
+#button {
+    margin: 0px auto;
+    font-size: 30px;
+    display: block;
+    width: 170px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+dl {
+    display: flex;
+    flex-flow: row wrap;
+    border: solid #333;
+    border-width: 1px 1px 0 0;
+    font-size: 30px;
+}
+
+dt {
+    flex-basis: 16%;
+    padding: 2px 4px;
+    background: #333;
+    text-align: right;
+    color: #fff;
+}
+
+dd {
+    flex-basis: 84%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 2px 4px;
+    border-bottom: 1px solid #333;
+}
+
+h3 {
+    font-size: 30px;
+}

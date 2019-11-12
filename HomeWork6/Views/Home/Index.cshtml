@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Index";
+    var products = ViewData["Products"] as List<HomeWork6.Models.Product>;
+}
+
+<h2>Список товаров</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (var product in products)
+    {
+        @Product(product)
+    }
+</table>
+
+@Html.ActionLink("Create New", "Create", "Home", new object { }, new { @class = "btnLink" })
+
+
+
+@helper Product(HomeWork6.Models.Product product)
+{
+    <tr>
+        <td>
+            @product.Name
+        </td>
+        <td>
+            @product.Description
+        </td>
+        <td>
+            @product.Price
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = product.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = product.Id })
+        </td>
+    </tr>
+}

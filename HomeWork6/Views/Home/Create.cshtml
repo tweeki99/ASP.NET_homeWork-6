@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<div id="form">
+    @Html.TextBox("name", null, new { @placeholder = "Название", @class = "textBox" })
+    @Html.TextBox("description", null, new { @placeholder = "Описание", @class = "textBox" })
+    @Html.TextBox("price", null, new { @placeholder = "Цена", @class = "textBox" })
+    <button id="button">Добавить</button>
+</div>
+
+@Html.ActionLink("Back to List", "Index", "Home", new object { }, new { @class = "btnLink" })

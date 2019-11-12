@@ -1,0 +1,24 @@
+﻿@model HomeWork6.Models.Product
+@{
+    ViewBag.Title = "Details";
+    var product = ViewData["Product"] as HomeWork6.Models.Product;
+}
+
+<h2>Информация о товаре</h2>
+
+<div>
+    <h3>Product "@product.Name"</h3>
+    <dl>
+
+        <dt>Name</dt>
+        <dd>@product.Name</dd>
+
+        <dt>Description</dt>
+        <dd>@product.Description</dd>
+
+        <dt>Price</dt>
+        <dd>@product.Price</dd>
+
+    </dl>
+</div>
+@Html.ActionLink("Back to List", "Index", "Home", new object { }, new { @class = "btnLink" })
